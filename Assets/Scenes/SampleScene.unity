@@ -1055,25 +1055,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f666fe6dddef0134fb3a2b56348dd168, type: 3}
---- !u!1 &1644902492 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3062390914263985369, guid: d669c5f8d733f4d469d04d137498a993, type: 3}
-  m_PrefabInstance: {fileID: 4354789271600642320}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1644902500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644902492}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37984f611e310047a738e2dca4fab5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
-  trophyTag: Trophy
-  winText: {fileID: 243453051}
 --- !u!1001 &2108468349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1155,17 +1136,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3950950655658658519, guid: d669c5f8d733f4d469d04d137498a993, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 3103878291613010215, guid: d669c5f8d733f4d469d04d137498a993, type: 3}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 243453051}
     - target: {fileID: 5276453690231263361, guid: d669c5f8d733f4d469d04d137498a993, type: 3}
-      propertyPath: speed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5276453690231263361, guid: d669c5f8d733f4d469d04d137498a993, type: 3}
-      propertyPath: jumpSpeed
-      value: 8
+      propertyPath: maxSpeed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8516626199904857352, guid: d669c5f8d733f4d469d04d137498a993, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1210,10 +1187,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3062390914263985369, guid: d669c5f8d733f4d469d04d137498a993, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1644902500}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d669c5f8d733f4d469d04d137498a993, type: 3}
 --- !u!1001 &5167723015595283319
 PrefabInstance:

@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8516626199904857352}
   - component: {fileID: 3950950655658658519}
   - component: {fileID: 5511478912909227316}
-  - component: {fileID: 6161386619485645609}
   - component: {fileID: 4880486901280362156}
   - component: {fileID: 5276453690231263361}
   - component: {fileID: 8998711381320290124}
+  - component: {fileID: 3103878291613010215}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6016199995058021882, guid: 70cabef0285f4074ba17ac392d800582, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -143,21 +143,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6161386619485645609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3062390914263985369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e47103b4ca46cf34296ac6567c7c2db9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 0
-  jumpSpeed: 0
-  input: {fileID: 0}
 --- !u!114 &4880486901280362156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,8 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47103b4ca46cf34296ac6567c7c2db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 1
-  jumpSpeed: 10
+  speed: 0.5
+  jumpSpeed: 8
   input: {fileID: 4880486901280362156}
 --- !u!50 &8998711381320290124
 Rigidbody2D:
@@ -230,3 +215,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &3103878291613010215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062390914263985369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37984f611e310047a738e2dca4fab5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
+  trophyTag: Trophy
+  winText: {fileID: 0}

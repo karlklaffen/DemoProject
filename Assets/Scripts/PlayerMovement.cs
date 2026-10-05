@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public float jumpSpeed;
+    public float maxSpeed;
 
     Rigidbody2D body;
 
@@ -28,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
         float horizMovement = input.actions.FindAction("Move").ReadValue<float>();
 
         body.AddForceX(horizMovement * speed, ForceMode2D.Impulse);
+
+        if (body.linearVelocityX > maxSpeed) {
+            body.linearVelocityX = maxSpeed;
+        }
 
         bool pressedJump = input.actions.FindAction("Jump").IsPressed();
 
